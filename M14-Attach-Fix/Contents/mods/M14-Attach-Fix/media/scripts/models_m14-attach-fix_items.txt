@@ -1,0 +1,48 @@
+module Base
+{
+	model M14
+	{
+		mesh = Weapons/Firearm/M14,
+		texture = weapons/firearm/AssaultRifle02,
+
+		attachment muzzle
+		{
+			offset = 0.0000 0.4750 0.0310,
+			rotate = -90.0000 0.0000 -180.0000,
+		}
+		attachment scope
+		{
+			offset = 0.0000 0.0900 0.0570,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment scope2
+		{
+			offset = 0.0000 0.1360 0.0550,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+		attachment recoilpad
+		{
+			offset = 0.0000 -0.1210 -0.0230,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment reddot
+		{
+			offset = 0.0000 0.0880 0.0470,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+
+		attachment laser
+		{
+			offset = 0.0090 0.3040 0.0230,
+			rotate = 0.0000 0.0000 0.0000,
+		}
+
+		attachment world
+		{
+			offset = 0.0000 0.1800 0.0000,
+			rotate = 180.0000 0.0000 180.0000,
+		}
+	}
+}

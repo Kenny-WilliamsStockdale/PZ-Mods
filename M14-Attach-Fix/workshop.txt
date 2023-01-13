@@ -1,0 +1,12 @@
+version=1
+id=2895870736
+title=M14 Attachment Fix
+description=This is a mod for the M14, I made it for myself mainly but thought I would share here.
+description=
+description=It focuses on fixing the current M14 attachments issue, which are showing on the wrong places on the weapon (as of B41.78).
+description=Now weapon attachments will show correctly on the M14.
+description=This mod only focuses only on the vanilla firearm attachments. It may work for other mods but I have not tested.
+description=
+description= Note: Iron sights do not show correctly. All other scopes show correctly.
+tags=Build 41;Items;Weapons
+visibility=public
