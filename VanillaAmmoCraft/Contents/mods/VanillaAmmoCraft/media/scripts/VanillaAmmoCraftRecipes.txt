@@ -1,0 +1,243 @@
+module VanillaAmmoCraft
+{
+  imports
+  {
+    Base
+  }
+
+/****************************** Vanilla Ammo Crafting ******************************/
+    recipe Create 9mm Round
+    {
+       GunPowder=10,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result:Bullets9mm,
+       Sound:Hammering,
+       Time:5.0,
+       Category:Ammo,
+       SkillRequired:Reloading=1,
+    }
+
+    recipe Bulk 9mm Round
+    {
+       GunPowder=300,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result:Bullets9mmBox,
+       Sound:Hammering,
+       Time:20.0,
+       Category:Ammo,
+       SkillRequired:Reloading=1,
+    }
+
+    recipe Create Shotgun Shell
+    {
+       GunPowder=20,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result:ShotgunShells,
+       Sound:Hammering,
+       Time:5.0,
+       Category:Ammo,
+       SkillRequired:Reloading=1,
+    }
+
+    recipe Bulk Shotgun Shell
+    {
+       GunPowder=420,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result:ShotgunShellsBox,
+       Sound:Hammering,
+       Time:20.0,
+       Category:Ammo,
+       SkillRequired:Reloading=1,
+    }
+
+    recipe Create .38 Special Round
+    {
+       GunPowder=10,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result:Bullets38,
+       Sound:Hammering,
+       Time:5.0,
+       Category:Ammo,
+       SkillRequired:Reloading=1,
+    }
+
+    recipe Bulk .38 Special Round
+    {
+       GunPowder=300,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result:Bullets38Box,
+       Sound:Hammering,
+       Time:20.0,
+       Category:Ammo,
+       SkillRequired:Reloading=1,
+    }
+
+    recipe Create .45 Auto Round
+    {
+       GunPowder=10,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result:Bullets45,
+       Sound:Hammering,
+       Time:5.0,
+       Category:Ammo,
+       SkillRequired:Reloading=1,
+    }
+
+    recipe Bulk .45 Auto Round
+    {
+       GunPowder=300,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result:Bullets38Box,
+       Sound:Hammering,
+       Time:20.0,
+       Category:Ammo,
+       SkillRequired:Reloading=1,
+    }
+
+    recipe Create .44 Magnum Round
+    {
+       GunPowder=20,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result:Bullets44,
+       Sound:Hammering,
+       Time:5.0,
+       Category:Ammo,
+       SkillRequired:Reloading=1,
+    }
+
+    recipe Bulk .44 Magnum Round
+    {
+       GunPowder=240,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result:Bullets44Box,
+       Sound:Hammering,
+       Time:20.0,
+       Category:Ammo,
+       SkillRequired:Reloading=1,
+    }
+
+    recipe Create .223 Round
+    {
+       GunPowder=10,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result:223Bullets,
+       Sound:Hammering,
+       Time:5.0,
+       Category:Ammo,
+       SkillRequired:Reloading=1,
+    }
+
+    recipe Bulk .223 Round
+    {
+       GunPowder=300,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result:223Box,
+       Sound:Hammering,
+       Time:20.0,
+       Category:Ammo,
+       SkillRequired:Reloading=1,
+    }
+
+    recipe Create .308 Round
+    {
+       GunPowder=20,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result:308Bullets,
+       Sound:Hammering,
+       Time:5.0,
+       Category:Ammo,
+       SkillRequired:Reloading=2,
+    }
+
+    recipe Bulk .308 Round
+    {
+       GunPowder=800,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result:308Box,
+       Sound:Hammering,
+       Time:20.0,
+       Category:Ammo,
+       SkillRequired:Reloading=2,
+    }
+
+    recipe Create .556 Round
+    {
+       GunPowder=20,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result:556Bullets,
+       Sound:Hammering,
+       Time:5.0,
+       Category:Ammo,
+       SkillRequired:Reloading=2,
+    }
+
+    recipe Bulk .556 Round
+    {
+       GunPowder=1200,
+       keep [Recipe.GetItemTypes.Hammer],
+
+       Result:556Box,
+       Sound:Hammering,
+       Time:20.0,
+       Category:Ammo,
+       SkillRequired:Reloading=2,
+    }
+
+/****************************** Misc - GunPowder and Charcoal Crafting ******************************/ 
+   recipe Homemade Gunpowder
+    {
+       Charcoal=5, 
+       Fertilizer=1,
+       keep MortarPestle,
+
+       Result:GunPowder=50,
+       Time:50.0,
+       Category:Ammo,
+    }
+
+    recipe Homemade Gunpowder
+    {
+       Charcoal=5,
+       CompostBag=1,
+       keep MortarPestle,
+
+       Result:GunPowder=50,
+       Time:50.0,
+       Category:Ammo,
+    }
+   
+   recipe Make Charcoal
+   {
+      Plank=3,
+      NearItem:Campfire,
+      Result:Charcoal,
+      Time:150.0,
+      Category:Survivalist,
+      CanBeDoneFromFloor:true,
+    }
+
+   recipe Make Charcoal
+   {
+      Log,
+      NearItem:Campfire,
+      Result:Charcoal,
+      Time:150.0,
+      Category:Survivalist,
+      CanBeDoneFromFloor:true,
+    }
+}

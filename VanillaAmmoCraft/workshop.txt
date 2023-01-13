@@ -1,0 +1,6 @@
+version=1
+id=2917227717
+title=Vanilla Ammo Craft
+description=Allows the crafting of vanilla PZ ammo.
+tags=Build 41;Balance;Items;Misc;Silly/Fun;Weapons
+visibility=unlisted
